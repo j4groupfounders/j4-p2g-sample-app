@@ -26,10 +26,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.2'
-          bundler: '2.3.14'
-      - run: bundle config set frozen true
-      - run: bundle install
+          ruby-version: '3.2.9'
+          bundler: '2.6.9'
+      - run: bundle update
       - name: Verify fresh checkout
         env:
           J4_MUTATION: ${{ matrix.mutation }}

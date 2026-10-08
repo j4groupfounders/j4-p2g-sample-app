@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby "3.2.9"
 
-gem "rails",                      "7.0.4"
+gem "rails",                      "8.0.2"
 gem "image_processing",           "1.12.2"
-gem "active_storage_validations", "0.9.8"
+gem "active_storage_validations", "2.0.3"
 gem "bcrypt",                     "3.1.18"
 gem "faker",                      "2.21.0"
 gem "will_paginate",              "3.3.1"
@@ -17,11 +17,11 @@ gem "importmap-rails",            "1.1.0"
 gem "turbo-rails",                "1.1.1"
 gem "stimulus-rails",             "1.0.4"
 gem "jbuilder",                   "2.11.5"
-gem "puma",                       "5.6.4"
-gem "bootsnap",                   "1.12.0", require: false
+gem "puma",                       "6.6.0"
+gem "bootsnap",                   "1.18.6", require: false
 
 group :development, :test do
-  gem "sqlite3", "1.4.2"
+  gem "sqlite3", "2.1.1"
   gem "debug",   "1.5.0", platforms: %i[ mri mingw x64_mingw ]
 end
 
@@ -34,7 +34,7 @@ group :test do
   gem "selenium-webdriver",       "4.2.0"
   gem "webdrivers",               "5.0.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "minitest",                 "5.15.0"
+  gem "minitest",                 "5.25.5"
   gem "minitest-reporters",       "1.5.0"
   gem "guard",                    "2.18.0"
   gem "guard-minitest",           "2.4.6"
