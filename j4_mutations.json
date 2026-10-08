@@ -1,0 +1,37 @@
+[
+  {
+    "name": "blank user name accepted",
+    "file": "app/models/user.rb",
+    "old": "validates :name,  presence: true, length: { maximum: 50 }",
+    "new": "validates :name,  length: { maximum: 50 }",
+    "count": 1
+  },
+  {
+    "name": "email normalization dropped",
+    "file": "app/models/user.rb",
+    "old": "self.email = email.downcase",
+    "new": "self.email = email",
+    "count": 1
+  },
+  {
+    "name": "password expiration inverted",
+    "file": "app/models/user.rb",
+    "old": "reset_sent_at < 2.hours.ago",
+    "new": "reset_sent_at > 2.hours.ago",
+    "count": 1
+  },
+  {
+    "name": "feed ordering reversed",
+    "file": "app/models/micropost.rb",
+    "old": "order(created_at: :desc)",
+    "new": "order(created_at: :asc)",
+    "count": 1
+  },
+  {
+    "name": "unfollow becomes no-op",
+    "file": "app/models/user.rb",
+    "old": "following.delete(other_user)",
+    "new": "following.include?(other_user)",
+    "count": 1
+  }
+]
