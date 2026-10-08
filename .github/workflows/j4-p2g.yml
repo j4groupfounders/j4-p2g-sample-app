@@ -28,7 +28,8 @@ jobs:
         with:
           ruby-version: '3.2.9'
           bundler: '2.6.9'
-      - run: bundle update
+      - run: bundle config set frozen true
+      - run: bundle install
       - name: Verify fresh checkout
         env:
           J4_MUTATION: ${{ matrix.mutation }}
