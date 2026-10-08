@@ -49,3 +49,6 @@ end
 # Uncomment the following line if you're running Rails
 # on a native Windows system:
 # gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+
+# Rails 8.0.2 serialization still passes the JSON 2.x quirks_mode option.
+gem "json", "2.10.2"
