@@ -16,7 +16,7 @@ gem "sprockets-rails",            "3.4.2"
 gem "importmap-rails",            "1.1.0"
 gem "turbo-rails",                "1.1.1"
 gem "stimulus-rails",             "1.0.4"
-gem "jbuilder",                   "2.11.5"
+gem "jbuilder",                   "2.13.0"
 gem "puma",                       "6.6.0"
 gem "bootsnap",                   "1.18.6", require: false
 
