@@ -28,6 +28,7 @@ jobs:
         with:
           ruby-version: '3.1.2'
           bundler: '2.3.14'
+      - run: bundle config set frozen true
       - run: bundle install
       - name: Verify fresh checkout
         env:
